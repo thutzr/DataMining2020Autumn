@@ -1,7 +1,10 @@
 # DataMining2020Autumn
 > Author: 谭泽人
+> 
 > Class: 交叉研20
+> 
 > StudentID: 2020211335
+> 
 > Email: tanzr20@mails.tsinghua.edu.cn
 ## List of Files
 * Apriori.py
