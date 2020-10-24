@@ -1,0 +1,30 @@
+\begin{thebibliography}{1}
+
+\bibitem{agarwal1994fast}
+Rakesh Agarwal, Ramakrishnan Srikant, et~al.
+\newblock Fast algorithms for mining association rules.
+\newblock In {\em Proc. of the 20th VLDB Conference}, pages 487--499, 1994.
+
+\bibitem{agrawal1993mining}
+Rakesh Agrawal, Tomasz Imieli{\'n}ski, and Arun Swami.
+\newblock Mining association rules between sets of items in large databases.
+\newblock In {\em Proceedings of the 1993 ACM SIGMOD international conference
+  on Management of data}, pages 207--216, 1993.
+
+\bibitem{han2000mining}
+Jiawei Han, Jian Pei, and Yiwen Yin.
+\newblock Mining frequent patterns without candidate generation.
+\newblock {\em ACM sigmod record}, 29(2):1--12, 2000.
+
+\bibitem{wang2003closet+}
+J~Wang, J~Han, and J~Pei.
+\newblock Closet+: Scalable and space-saving closed itemset mining.
+\newblock {\em Submitted for publication}, 2003.
+
+\bibitem{zaki2002charm}
+Mohammed~J Zaki and Ching-Jui Hsiao.
+\newblock Charm: An efficient algorithm for closed itemset mining.
+\newblock In {\em Proceedings of the 2002 SIAM international conference on data
+  mining}, pages 457--473. SIAM, 2002.
+
+\end{thebibliography}
