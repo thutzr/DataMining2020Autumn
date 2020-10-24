@@ -267,7 +267,7 @@ minConf只影响关联规则的挖掘，随着minConf增大，关联规则被剪
 \section{实验代码}
 提交的结果中包含一个\texttt{Apriori.py}和一个\texttt{Apriori.ipynb}文件，ipynb文件中包含了算法的实现和实验的结果，比较详细，可读性铰.py文件更强。如果需要运行.py文件，请在命令行输入以下命令：
 \begin{lstlisting}[language=command.com]
-$ python -f  file.csv -s minSup -c minConf -of freqPath -oa assoPath
+$ python -f file.csv -s minSup -c minConf -of freqPath -oa assoPath
 \end{lstlisting}
 其中，\texttt{-f}用于指定csv文件，\texttt{-s}用于指定minSup，\texttt{-c}用于指定minConf，\texttt{-of}和\texttt{-oa}分别用于指定freqPatterns和associationRules存储的路径。默认的minSup为10，默认的minConf为0.3，freqPath和assoPath分别默认为freqPattern.csv和associationRules.csv。
 \bibliographystyle{plain}
