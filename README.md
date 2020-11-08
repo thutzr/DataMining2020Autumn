@@ -11,6 +11,9 @@
 * Apriori.ipynb
 * groceries.csv
 * report/
+	* pic/
+	* report.tex
+	* ref.bib
 * README.md
 ## Usage
 To run the program, just run the following command:
