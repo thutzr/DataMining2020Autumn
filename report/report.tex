@@ -57,7 +57,6 @@
 \usepackage{graphicx}
 \pagenumbering{gobble}
 \usepackage{verbatim}
-
 \usepackage{listings}
 \usepackage{xcolor}
 
@@ -232,8 +231,71 @@ def Apriori(transactionGenerator, minSup, minConf):
 >>> LSetDict, freqPattern, associationRule = Apriori(file,minSup,minConf)
 >>> t2 = datetime.now()
 >>> print('Total running time of Apriori with minSup %d, minConf %.2f is: %.4f s' %(minSup,minConf,(t2-t1).seconds))
-Total running time of Apriori with minSup 100, minConf 0.50 is: 7.0000 s
+Total running time of Apriori with minSup 100, minConf 0.50 is: 5.0000 s
+>>> freqPatternDF = pd.DataFrame(freqPattern)
+>>> freqPatternDF.columns = ['pattern','frequency']
 \end{lstlisting}
+% 利用\texttt{pandas}展示的\texttt{freqPatternDF}的后面5行结果如下图所示。
+% \begin{figure}
+% \centering
+% \includegraphics[width=10cm]{./pic/pattern}
+% \caption{\texttt{freqPatternDF}的后面5行}
+% \end{figure}
+
+在设定\texttt{minSup}为100的情况下，求解出的包含一个元素的频繁项集有88个，包含两个元素的频繁项集有221个，包含三个元素的频繁项集有32个。其中出现频率最高的物品是“whole milk”，共在2513个订单中出现，其次为“other vegetables”，出现了1903次。出现频率较高的项集如表~\ref{tab:freq}~所示。
+\begin{table}
+\centering
+\caption{出现频率最高的项集}
+\label{tab:freq}
+\begin{tabular}{c|c||p{5.5cm}|c||p{5.5cm}|c}
+\hline 
+项集 & 频率 & 项集 & 频率 & 项集 & 频率\\
+\hline\hline
+whole milk & 2513 & whole milk, other vegetables&736 &root vegetables, whole milk, other vegetables & 228\\
+\hline 
+other vegetables & 1903 & rolls/buns, whole milk & 557 & yogurt, whole milk, other vegetables&219 \\
+\hline 
+rolls/buns & 1809 & whole milk, yogurt & 551 &yogurt, rolls/buns, whole milk & 153\\
+\hline 
+soda & 1715 & whole milk, root vegetables & 481 &tropical fruit, whole milk, yogurt & 149\\
+\hline 
+yogurt & 1372 & root vegetables, other vegetables & 466 & whipped/sour cream, whole milk, other vegetables&144 \\
+\hline 
+\end{tabular}
+\end{table}
+
+confidence 不小于0.5的关联规则共有15个，分别如表~\ref{tab:assorules}~所示：
+\begin{table}
+\centering
+\caption{confidence大于0.5的关联规则}
+\label{tab:assorules}
+\begin{tabular}{ccc}
+\hline 
+X & Y & confidence\\
+\hline\hline
+yogurt, root vegetables &  other vegetables & 0.500\\
+rolls/buns, root vegetables &  other vegetables & 0.502\\
+whipped/sour cream, other vegetables& whole milk &    0.507\\
+other vegetables, yogurt & whole milk  &  0.513\\
+tropical fruit, yogurt & whole milk & 0.517\\
+pip fruit, other vegetables & whole milk & 0.518\\
+rolls/buns, root vegetables & whole milk &  0.523\\
+whipped/sour cream, yogurt & whole milk & 0.525\\
+other vegetables, domestic eggs & whole milk & 0.553\\
+yogurt, root vegetables & whole milk & 0.563\\
+tropical fruit, root vegetables & whole milk & 0.570\\
+other vegetables, butter & whole milk&  0.574\\
+curd, yogurt & whole milk & 0.582\\
+tropical fruit, root vegetables & other vegetables& 0.585\\
+citrus fruit, root vegetables & other vegetables &  0.586\\
+\hline 
+\end{tabular}
+\end{table}
+% \begin{figure}
+% \centering
+% \includegraphics[width=10cm]{./pic/freqpatternone}
+% \caption{出现频率前五的物品}
+% \end{figure}
 
 \section{不同参数下算法的结果}
 我的算法中设置了两个参数minSup和minConf，分别代表support的最小阈值和confidence的最小阈值。我在不同的参数设定下分别运行算法。实验环境为windows 10环境下laptop CPU@1.60GHz。 
@@ -241,7 +303,7 @@ Total running time of Apriori with minSup 100, minConf 0.50 is: 7.0000 s
 随着minSup的增大，将会有更多的项集因为出现的次数不够多而被剪枝，从而最终得到的频繁项集的大小以及关联规则的大小都将减小，如图~\ref{fig:minsup}~所示。
 \begin{figure}
 \centering
-\includegraphics[width=10cm]{./pic/minsup}
+\includegraphics[width=7cm]{./pic/minsup}
 \caption{不同minSup下的结果}
 \label{fig:minsup}
 \end{figure}
@@ -265,7 +327,7 @@ minConf只影响关联规则的挖掘，随着minConf增大，关联规则被剪
 
 
 \section{实验代码}
-提交的结果中包含一个\texttt{Apriori.py}和一个\texttt{Apriori.ipynb}文件，ipynb文件中包含了算法的实现和实验的结果，比较详细，可读性铰.py文件更强。如果需要运行.py文件，请在命令行输入以下命令：
+所有代码都在\href{https://github.com/thutzr/DataMining2020Autumn}{这里}。提交的结果中包含一个\texttt{Apriori.py}和一个\texttt{Apriori.ipynb}文件，ipynb文件中包含了算法的实现和实验的结果，比较详细，可读性铰.py文件更强。如果需要运行.py文件，请在命令行输入以下命令：
 \begin{lstlisting}[language=command.com]
 $ python -f file.csv -s minSup -c minConf -of freqPath -oa assoPath
 \end{lstlisting}

@@ -1,123 +1,16 @@
 ,X,Y,confidence
-0,{'hamburger meat'},{'whole milk'},0.4434250764525994
-1,{'dessert'},{'whole milk'},0.3698630136986301
-2,{'white bread'},{'other vegetables'},0.32608695652173914
-3,{'sugar'},{'other vegetables'},0.3183183183183183
-4,{'curd'},{'whole milk'},0.4904580152671756
-5,{'brown bread'},{'whole milk'},0.3887147335423197
-6,{'yogurt'},{'whole milk'},0.40160349854227406
-7,{'pip fruit'},{'whole milk'},0.3978494623655914
-8,{'cream cheese'},{'other vegetables'},0.34615384615384615
-9,{'beef'},{'whole milk'},0.4050387596899225
-10,{'pork'},{'whole milk'},0.3844797178130511
-11,{'citrus fruit'},{'whole milk'},0.36855036855036855
-12,{'pastry'},{'whole milk'},0.3737142857142857
-13,{'curd'},{'yogurt'},0.3244274809160305
-14,{'bottled water'},{'whole milk'},0.3109475620975161
-15,{'frankfurter'},{'whole milk'},0.3482758620689655
-16,{'fruit/vegetable juice'},{'whole milk'},0.36849507735583686
-17,{'frankfurter'},{'rolls/buns'},0.3258620689655172
-18,{'sausage'},{'rolls/buns'},0.32575757575757575
-19,{'chicken'},{'other vegetables'},0.41706161137440756
-20,{'margarine'},{'whole milk'},0.4131944444444444
-21,{'berries'},{'whole milk'},0.3547400611620795
-22,{'whipped/sour cream'},{'whole milk'},0.44964539007092197
-23,{'ham'},{'whole milk'},0.44140625
-24,{'butter milk'},{'whole milk'},0.41454545454545455
-25,{'beef'},{'root vegetables'},0.3313953488372093
-26,{'frozen vegetables'},{'other vegetables'},0.3699788583509514
-27,{'butter'},{'other vegetables'},0.3614678899082569
-28,{'onions'},{'whole milk'},0.3901639344262295
-29,{'root vegetables'},{'other vegetables'},0.43470149253731344
-30,{'tropical fruit'},{'other vegetables'},0.34205426356589147
-31,{'newspapers'},{'whole milk'},0.34267515923566877
-32,{'domestic eggs'},{'other vegetables'},0.35096153846153844
-33,{'waffles'},{'whole milk'},0.3306878306878307
-34,{'sausage'},{'whole milk'},0.3181818181818182
-35,{'hamburger meat'},{'other vegetables'},0.41590214067278286
-36,{'dessert'},{'other vegetables'},0.31232876712328766
-37,{'cream cheese'},{'yogurt'},0.3128205128205128
-38,{'white bread'},{'whole milk'},0.4057971014492754
-39,{'sugar'},{'whole milk'},0.4444444444444444
-40,{'curd'},{'other vegetables'},0.32251908396946566
-41,{'long life bakery product'},{'whole milk'},0.36141304347826086
-42,{'other vegetables'},{'whole milk'},0.38675775091960063
-43,{'oil'},{'whole milk'},0.40217391304347827
-44,{'yogurt'},{'other vegetables'},0.3112244897959184
-45,{'pip fruit'},{'other vegetables'},0.34543010752688175
-46,{'cream cheese'},{'whole milk'},0.4153846153846154
-47,{'beef'},{'other vegetables'},0.375968992248062
-48,{'pork'},{'other vegetables'},0.37566137566137564
-49,{'chocolate'},{'whole milk'},0.3360655737704918
-50,{'citrus fruit'},{'other vegetables'},0.3488943488943489
-51,{'coffee'},{'whole milk'},0.3222416812609457
-52,{'sliced cheese'},{'whole milk'},0.43983402489626555
-53,{'chicken'},{'whole milk'},0.4099526066350711
-54,{'margarine'},{'other vegetables'},0.3368055555555556
-55,{'berries'},{'other vegetables'},0.308868501529052
-56,{'butter milk'},{'other vegetables'},0.3709090909090909
-57,{'whipped/sour cream'},{'other vegetables'},0.40283687943262414
-58,{'frozen vegetables'},{'whole milk'},0.4249471458773784
-59,{'butter'},{'whole milk'},0.4972477064220184
-60,{'onions'},{'other vegetables'},0.45901639344262296
-61,{'napkins'},{'whole milk'},0.3766990291262136
-62,{'root vegetables'},{'whole milk'},0.44869402985074625
-63,{'hygiene articles'},{'whole milk'},0.3888888888888889
-64,{'tropical fruit'},{'whole milk'},0.40310077519379844
-65,{'berries'},{'yogurt'},0.3180428134556575
-66,{'rolls/buns'},{'whole milk'},0.30790491984521834
-67,{'domestic eggs'},{'whole milk'},0.47275641025641024
-68,"{'yogurt', 'whipped/sour cream'}",{'whole milk'},0.5245098039215687
-69,"{'whole milk', 'whipped/sour cream'}",{'yogurt'},0.33753943217665616
-70,"{'yogurt', 'whipped/sour cream'}",{'other vegetables'},0.49019607843137253
-71,"{'other vegetables', 'whipped/sour cream'}",{'yogurt'},0.352112676056338
-72,"{'tropical fruit', 'whole milk'}",{'other vegetables'},0.40384615384615385
-73,"{'tropical fruit', 'other vegetables'}",{'whole milk'},0.47592067988668557
-74,"{'whole milk', 'pork'}",{'other vegetables'},0.45871559633027525
-75,"{'pork', 'other vegetables'}",{'whole milk'},0.4694835680751174
-76,"{'whole milk', 'butter'}",{'other vegetables'},0.41697416974169743
-77,"{'other vegetables', 'butter'}",{'whole milk'},0.5736040609137056
-78,"{'yogurt', 'soda'}",{'whole milk'},0.3828996282527881
-79,"{'other vegetables', 'citrus fruit'}",{'whole milk'},0.4507042253521127
-80,"{'whole milk', 'citrus fruit'}",{'other vegetables'},0.4266666666666667
-81,"{'whole milk', 'rolls/buns'}",{'other vegetables'},0.31597845601436264
-82,"{'rolls/buns', 'other vegetables'}",{'whole milk'},0.4200477326968974
-83,"{'other vegetables', 'citrus fruit'}",{'root vegetables'},0.3591549295774648
-84,"{'citrus fruit', 'root vegetables'}",{'other vegetables'},0.5862068965517241
-85,"{'rolls/buns', 'root vegetables'}",{'whole milk'},0.5230125523012552
-86,"{'rolls/buns', 'root vegetables'}",{'other vegetables'},0.502092050209205
-87,"{'tropical fruit', 'root vegetables'}",{'whole milk'},0.5700483091787439
-88,"{'tropical fruit', 'other vegetables'}",{'root vegetables'},0.34277620396600567
-89,"{'tropical fruit', 'root vegetables'}",{'other vegetables'},0.5845410628019324
-90,"{'soda', 'whole milk'}",{'other vegetables'},0.3477157360406091
-91,"{'soda', 'other vegetables'}",{'whole milk'},0.4254658385093168
-92,"{'yogurt', 'root vegetables'}",{'other vegetables'},0.5
-93,"{'yogurt', 'root vegetables'}",{'whole milk'},0.562992125984252
-94,"{'whole milk', 'pip fruit'}",{'other vegetables'},0.44932432432432434
-95,"{'other vegetables', 'pip fruit'}",{'whole milk'},0.5175097276264592
-96,"{'yogurt', 'rolls/buns'}",{'whole milk'},0.4526627218934911
-97,"{'yogurt', 'citrus fruit'}",{'whole milk'},0.47417840375586856
-98,"{'whole milk', 'citrus fruit'}",{'yogurt'},0.33666666666666667
-99,"{'yogurt', 'rolls/buns'}",{'other vegetables'},0.3343195266272189
-100,"{'whole milk', 'fruit/vegetable juice'}",{'other vegetables'},0.3931297709923664
-101,"{'fruit/vegetable juice', 'other vegetables'}",{'whole milk'},0.4975845410628019
-102,"{'bottled water', 'whole milk'}",{'other vegetables'},0.3136094674556213
-103,"{'bottled water', 'other vegetables'}",{'whole milk'},0.4344262295081967
-104,"{'domestic eggs', 'whole milk'}",{'other vegetables'},0.4101694915254237
-105,"{'domestic eggs', 'other vegetables'}",{'whole milk'},0.5525114155251142
-106,"{'tropical fruit', 'rolls/buns'}",{'whole milk'},0.4462809917355372
-107,"{'whole milk', 'other vegetables'}",{'root vegetables'},0.30978260869565216
-108,"{'whole milk', 'root vegetables'}",{'other vegetables'},0.47401247401247404
-109,"{'other vegetables', 'root vegetables'}",{'whole milk'},0.4892703862660944
-110,"{'pastry', 'whole milk'}",{'other vegetables'},0.3180428134556575
-111,"{'pastry', 'other vegetables'}",{'whole milk'},0.46846846846846846
-112,"{'whole milk', 'sausage'}",{'other vegetables'},0.3401360544217687
-113,"{'other vegetables', 'sausage'}",{'whole milk'},0.37735849056603776
-114,"{'yogurt', 'tropical fruit'}",{'other vegetables'},0.4201388888888889
-115,"{'tropical fruit', 'other vegetables'}",{'yogurt'},0.34277620396600567
-116,"{'yogurt', 'tropical fruit'}",{'whole milk'},0.5173611111111112
-117,"{'tropical fruit', 'whole milk'}",{'yogurt'},0.3581730769230769
-118,"{'whole milk', 'whipped/sour cream'}",{'other vegetables'},0.45425867507886436
-119,"{'other vegetables', 'whipped/sour cream'}",{'whole milk'},0.5070422535211268
-120,"{'yogurt', 'whole milk'}",{'other vegetables'},0.397459165154265
-121,"{'yogurt', 'other vegetables'}",{'whole milk'},0.5128805620608899
+0,"{'citrus fruit', 'root vegetables'}",{'other vegetables'},0.5862068965517241
+1,"{'yogurt', 'root vegetables'}",{'other vegetables'},0.5
+2,"{'other vegetables', 'domestic eggs'}",{'whole milk'},0.5525114155251142
+3,"{'rolls/buns', 'root vegetables'}",{'whole milk'},0.5230125523012552
+4,"{'yogurt', 'root vegetables'}",{'whole milk'},0.562992125984252
+5,"{'other vegetables', 'yogurt'}",{'whole milk'},0.5128805620608899
+6,"{'other vegetables', 'butter'}",{'whole milk'},0.5736040609137056
+7,"{'tropical fruit', 'root vegetables'}",{'whole milk'},0.5700483091787439
+8,"{'pip fruit', 'other vegetables'}",{'whole milk'},0.5175097276264592
+9,"{'whipped/sour cream', 'yogurt'}",{'whole milk'},0.5245098039215687
+10,"{'tropical fruit', 'root vegetables'}",{'other vegetables'},0.5845410628019324
+11,"{'rolls/buns', 'root vegetables'}",{'other vegetables'},0.502092050209205
+12,"{'whipped/sour cream', 'other vegetables'}",{'whole milk'},0.5070422535211268
+13,"{'tropical fruit', 'yogurt'}",{'whole milk'},0.5173611111111112
+14,"{'curd', 'yogurt'}",{'whole milk'},0.5823529411764706
